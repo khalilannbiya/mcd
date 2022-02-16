@@ -48,6 +48,7 @@ nav ul li a {
 
 nav ul li a:hover {
    color: #f8f8f8;
+
    transition: 1s;
 }
 
@@ -91,16 +92,16 @@ nav ul li a:hover {
    transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2) {
+.menu-toggle input:checked~span:nth-child(2) {
    transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.menu-toggle input:checked ~ span:nth-child(3) {
+.menu-toggle input:checked~span:nth-child(3) {
    transform: scale(0);
    opacity: 0;
 }
 
-.menu-toggle input:checked ~ span:nth-child(4) {
+.menu-toggle input:checked~span:nth-child(4) {
    transform: rotate(-45deg) translate(0, 0);
 }
 
