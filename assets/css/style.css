@@ -32,7 +32,6 @@ nav {
 nav .logo {
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
-
 }
 
 .logo a {
@@ -135,16 +134,16 @@ nav ul li .btn-nav {
   transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked~span:nth-child(2) {
+.menu-toggle input:checked ~ span:nth-child(2) {
   transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.menu-toggle input:checked~span:nth-child(3) {
+.menu-toggle input:checked ~ span:nth-child(3) {
   transform: scale(0);
   opacity: 0;
 }
 
-.menu-toggle input:checked~span:nth-child(4) {
+.menu-toggle input:checked ~ span:nth-child(4) {
   transform: rotate(-45deg) translate(0px, 0px);
 }
 
@@ -154,7 +153,6 @@ nav ul li .btn-nav {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
 
 #hero .typography__hero {
@@ -200,7 +198,6 @@ nav ul li .btn-nav {
   bottom: 21vh;
   animation: show 5s infinite;
   opacity: 1;
-
 }
 
 @keyframes show {
@@ -292,11 +289,9 @@ nav ul li .btn-nav {
   opacity: 1;
 }
 
-
-
 /* ========= Section About ========= */
 #about {
-  padding: 5vw 10vw 0 10vw;
+  padding: 8vw 10vw 0 10vw;
 }
 
 .heading-section {
@@ -310,7 +305,7 @@ nav ul li .btn-nav {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   position: absolute;
 }
 
@@ -331,7 +326,208 @@ nav ul li .btn-nav {
   font-size: 1.5rem;
   line-height: 1.5;
   text-align: justify;
-  color: #0D0E25;
+  color: #0d0e25;
+}
+
+/* ========= Best Seller ========= */
+#bestseller {
+  margin-top: 20vw;
+  padding: 8vw 10vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bestseller .list__menu {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+
+.list__menu .card__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25vw;
+  height: 35vw;
+  padding: 1vw 2vw;
+  margin: 0 2vw 5vw 2vw;
+  background-color: #f4f5f4;
+  border-radius: 2vw;
+  transition: all 0.3s ease;
+}
+
+.list__menu .card__menu:hover {
+  background: #f4f5f4;
+  box-shadow: 8px 8px 18px #e6e6e6, -8px -8px 18px #e6e6e6;
+}
+
+.menu__img img {
+  width: 14vw;
+  height: 14vw;
+}
+
+.card__menu .menu__name {
+  margin-top: 3vw;
+  text-align: center;
+}
+
+.menu__name h3 {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.menu__name p {
+  margin-top: 1vw;
+  color: #c1c1c1;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.menu__price {
+  margin-top: 5vw;
+}
+
+.menu__price h3 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+/* ========= Sectin Contact ========== */
+#contact {
+  padding-top: 13vw;
+}
+
+#contact .ourcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10vw;
+}
+
+.ourcontact .list__contact {
+  display: flex;
+  align-items: center;
+  margin: 0 3vw 3vw 3vw;
+  padding: 1.4vw 2vw 1vw 2vw;
+  border-radius: 1vw;
+  transition: all 0.3s ease;
+}
+
+.list__contact a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5vw;
+  margin-right: 2vw;
+  font-weight: 600;
+  color: #27251f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 3vw 5vw 3vw;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+}
+
+.list__contact a:hover {
+  background-color: #f4f5f4;
+  box-shadow: 0px 20px 42px -14px rgba(0, 0, 0, 0.4);
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+}
+
+.list__contact i {
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-right: 1vw;
+}
+
+/* ========== Section Footer ============ */
+footer {
+  margin-top: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 0;
+}
+
+footer .main__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.main__footer .link__footer {
+  margin-left: 50vw;
+  margin-top: 9.5vw;
+}
+
+.main__footer .logo__footer {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.logo__footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+
+.logo__footer a img {
+  width: 2.8vw;
+  margin-right: 1vw;
+}
+
+.logo__footer a h4 {
+  color: #27251f;
+  font-size: 1vw;
+}
+
+.link__footer h3 {
+  font-size: 1.3vw;
+}
+
+.link__footer .list__sitemap {
+  margin-top: 1.5vw;
+}
+
+.list__sitemap .sitemap {
+  margin-bottom: 1vw;
+}
+
+.sitemap a {
+  font-size: 1vw;
+  text-decoration: none;
+  color: #27251f;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sitemap a:hover {
+  color: #ffcc00;
+  font-weight: 500;
+}
+
+footer .bottom__footer {
+  margin-top: 10vw;
+}
+
+.bottom__footer p {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #27251f;
 }
 
 /* Ukuran Tablet */
@@ -475,10 +671,102 @@ nav ul li .btn-nav {
   .flex-about p {
     font-size: 1.3rem;
   }
+
+  /* ========= Section Best Seller ========= */
+  #bestseller .list__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .list__menu .card__menu {
+    width: 35vw;
+    height: 45vw;
+    margin-bottom: 5vw;
+  }
+
+  .menu__img img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .menu__name h3 {
+    font-size: 2vw;
+  }
+
+  .menu__name p {
+    font-size: 1.2vw;
+  }
+
+  .menu__price h3 {
+    font-size: 2vw;
+  }
+
+  /* ======= Section Contact ========= */
+  #contact {
+    margin-top: 20vw;
+  }
+
+  #contact .ourcontact {
+    margin-top: 15vw;
+  }
+
+  .header__contact p {
+    font-size: 2vw;
+  }
+
+  .list__contact a,
+  .list__contact i {
+    font-size: 2vw;
+  }
+
+  .list__contact a:hover {
+    background-color: #f4f5f4;
+    box-shadow: 0px 20px 30px -14px rgba(0, 0, 0, 0.4);
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+  }
+
+  /* ====== Section footer ========= */
+  footer {
+    padding: 2vw 13vw;
+  }
+
+  .logo__footer a img {
+    width: 5vw;
+  }
+
+  .logo__footer a h4 {
+    font-size: 1.8vw;
+  }
+
+  .link__footer h3 {
+    font-size: 1.8vw;
+  }
+
+  .main__footer .link__footer {
+    margin-top: 12vw;
+  }
+
+  .link__footer .list__sitemap {
+    margin-top: 2.5vw;
+  }
+
+  .list__sitemap .sitemap {
+    width: 10vw;
+  }
+
+  .sitemap a {
+    font-size: 1.5vw;
+  }
+
+  .bottom__footer p {
+    font-size: 1.5vw;
+  }
 }
 
-
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+}
 
 /* ukuran Mobile */
 @media screen and (max-width: 576px) {
@@ -554,7 +842,7 @@ nav ul li .btn-nav {
 
   /* ========= Section About ========= */
   .heading-section {
-    font-size: 6.5vw;
+    font-size: 8vw;
   }
 
   .heading-section::after {
@@ -569,5 +857,119 @@ nav ul li .btn-nav {
 
   .flex-about p {
     font-size: 4vw;
+  }
+
+  /* ========= Section Best Seller ======== */
+  #bestseller {
+    margin-top: 30vw;
+  }
+
+  #bestseller .list__menu {
+    margin-top: 20vw;
+  }
+
+  .list__menu .card__menu {
+    width: 100%;
+    height: 50vh;
+    border-radius: 4vw;
+    margin-bottom: 20vw;
+  }
+
+  .menu__img img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .menu__name h3 {
+    font-size: 5vw;
+  }
+
+  .menu__name p {
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+
+  .menu__price h3 {
+    font-size: 5vw;
+  }
+
+  #contact .ourcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ourcontact .list__contact {
+    padding: 4vw 3vw;
+  }
+
+  .list__contact a {
+    margin: 0 3vw 3vw 3vw;
+    padding: 3.5vw 4.5vw;
+    border-radius: 2vw;
+  }
+
+  .list__contact a:hover {
+    padding: 3.5vw 4.5vw;
+    border-radius: 2vw;
+    box-shadow: 0px 15px 42px -14px rgba(0, 0, 0, 0.4);
+  }
+
+  .list__contact a,
+  .list__contact i {
+    font-size: 4.5vw;
+  }
+
+  /* ====== Section Footer ======== */
+
+  footer {
+    margin-top: 60vw;
+    padding: 5vw 0;
+  }
+
+  footer .main__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -30vw;
+  }
+
+  .main__footer .link__footer {
+    margin-left: 0;
+    margin-top: 20vw;
+  }
+
+  .logo__footer a img {
+    width: 12vw;
+  }
+
+  .logo__footer a h4 {
+    font-size: 5vw;
+  }
+
+  .link__footer h3 {
+    font-size: 5.5vw;
+  }
+
+  .link__footer .list__sitemap {
+    margin-top: 5vw;
+  }
+
+  .list__sitemap .sitemap {
+    width: 50vw;
+    margin-bottom: 4vw;
+  }
+
+  .sitemap a {
+    font-size: 4vw;
+  }
+
+  footer .bottom__footer {
+    margin-top: 20vw;
+  }
+
+  .bottom__footer p {
+    font-size: 3vw;
   }
 }

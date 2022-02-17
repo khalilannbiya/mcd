@@ -1,91 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!-- Styling -->
-      <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-      <!-- ========= favicon ========= -->
-      <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-      <title>McDonald's</title>
-   </head>
-   <body>
-      <!-- ======================= Navbar ======================= -->
-      <header>
-         <nav>
-            <div class="logo">
-               <a href="#">
-                  <img src="assets/img/logo.png" alt="Logo McDonald's" />
-                  <h4>McDonald's</h4>
-               </a>
+    <!-- ========= favicon ========= -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <title>McDonald's</title>
+  </head>
+  <body>
+    <!-- ======================= Navbar ======================= -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="Logo McDonald's" />
+            <h4>McDonald's</h4>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#bestseller">Best Seller</a>
+          </li>
+          <li>
+            <a href="#contact" class="btn-nav">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-btn">
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========= Main ========= -->
+    <main>
+      <!-- ========= Section Hero ========= -->
+      <section id="hero">
+        <div>
+          <div class="typography__hero">
+            <h1>
+              Create happy moments with<br />
+              those closest to you at<br />
+              McDonald’s
+            </h1>
+            <a href="#bestseller" class="btn-hero">Best Seller</a>
+          </div>
+          <span class="circle-red1"></span>
+          <span class="circle-yellow1"></span>
+          <span class="circle-red2"></span>
+          <span class="circle-yellow2"></span>
+        </div>
+      </section>
+      <!-- ========= End Section Hero ========= -->
+
+      <!-- ========= Section About ========= -->
+      <section id="about">
+        <h2 class="heading-section">About Us</h2>
+        <div class="flex-about">
+          <img src="assets/img/about.png" alt="Gambar 3D" />
+          <p>
+            The world's largest restaurant chain by revenue, serving more than 69 million customers daily in more than 100 countries across 37,855 outlets in 2018. Although McDonald's is best known for its hamburgers, cheeseburgers and
+            fries, they serve chicken products, breakfast, soft drinks, milkshakes, wraps, and desserts.
+          </p>
+        </div>
+      </section>
+      <!-- ========= End Section About ========= -->
+
+      <!-- ========= Section Best Seller ========= -->
+      <section id="bestseller">
+        <h2 class="heading-section">Top Seller</h2>
+        <div class="list__menu">
+          <div class="card__menu">
+            <div class="menu__img">
+              <img src="assets/img/bigmac.png" alt="Big Mac" />
             </div>
-            <ul class="nav-links">
-               <li>
-                  <a href="#">Home</a>
-               </li>
-               <li>
-                  <a href="#about">About</a>
-               </li>
-               <li>
-                  <a href="#">Best Seller</a>
-               </li>
-               <li>
-                  <a href="#" class="btn-nav">Contact</a>
-               </li>
-            </ul>
-            <div class="nav-btn">
-               <a href="#contact">Contact</a>
+            <div class="menu__name">
+              <h3>BigMac Combo Meal</h3>
+              <p>Big Mac®, Coca-Cola® (Medium), World Famous Fries® (Medium)</p>
             </div>
-            <div class="menu-toggle">
-               <input type="checkbox" />
-               <span></span>
-               <span></span>
-               <span></span>
+            <div class="menu__price">
+              <h3>$ 15</h3>
             </div>
-         </nav>
-      </header>
-
-      <!-- ========= Main ========= -->
-      <main>
-         <!-- ========= Section Hero ========= -->
-         <section id="hero">
-            <div>
-               <div class="typography__hero">
-                  <h1>
-                     Create happy moments with<br />
-                     those closest to you at<br />
-                     McDonald’s
-                  </h1>
-                  <a href="#bestseller" class="btn-hero">Best Seller</a>
-               </div>
-               <span class="circle-red1"></span>
-               <span class="circle-yellow1"></span>
-               <span class="circle-red2"></span>
-               <span class="circle-yellow2"></span>
+          </div>
+          <div class="card__menu">
+            <div class="menu__img">
+              <img src="assets/img/happymeal.png" alt="Happy Meal" />
             </div>
-         </section>
-         <!-- ========= End Section Hero ========= -->
-
-         <!-- ========= Section About ========= -->
-         <section id="about">
-            <h2 class="heading-section">About Us</h2>
-            <div class="flex-about">
-               <img src="assets/img/about.png" alt="Gambar 3D" />
-               <p>
-                  The world's largest restaurant chain by revenue, serving more than 69 million customers daily in more than 100 countries across 37,855 outlets in 2018. Although McDonald's is best known for its hamburgers, cheeseburgers
-                  and fries, they serve chicken products, breakfast, soft drinks, milkshakes, wraps, and desserts.
-               </p>
+            <div class="menu__name">
+              <h3>McNuggets® Happy Meal</h3>
+              <p>6 Piece Chicken McNuggets® (6 piece), Fries® (Kids), 1% Low Fat Milk Jug</p>
             </div>
-         </section>
-         <!-- ========= End Section About ========= -->
-      </main>
+            <div class="menu__price">
+              <h3>$ 15</h3>
+            </div>
+          </div>
+          <div class="card__menu">
+            <div class="menu__img">
+              <img src="assets/img/eggmeal.png" alt="Egg Meal" />
+            </div>
+            <div class="menu__name">
+              <h3>McMuffin® with Egg Meal</h3>
+              <p>Sausage McMuffin® with Egg, Roast Coffee (Small), Hash Browns</p>
+            </div>
+            <div class="menu__price">
+              <h3>$ 15</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========= End Section Best Seller ========= -->
 
-      <footer></footer>
+      <!-- ============== Section Contact ==============  -->
+      <section id="contact">
+        <h2 class="heading-section">Contact</h2>
+        <div class="ourcontact">
+          <div class="list__contact">
+            <a href="#"><i class="ri-mail-line"></i>McDonald's@gmail.com</a>
+          </div>
+          <div class="list__contact">
+            <a href="#"><i class="ri-whatsapp-line"></i>+6281227820199</a>
+          </div>
+          <div class="list__contact">
+            <a href="#"><i class="ri-linkedin-box-line"></i>McDonald’s</a>
+          </div>
+          <div class="list__contact">
+            <a href="#"><i class="ri-instagram-line"></i>McDonald’s</a>
+          </div>
+        </div>
+      </section>
+      <!-- ============== End Section Contact ==============  -->
+    </main>
 
-      <script src="assets/js/app.js"></script>
-   </body>
+    <footer>
+      <div class="main__footer">
+        <div class="logo__footer">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="Logo McDonald's" />
+            <h4>McDonald's</h4>
+          </a>
+        </div>
+        <div class="link__footer">
+          <h3>Sitemap</h3>
+          <div class="list__sitemap">
+            <div class="sitemap">
+              <a href="#">
+                <p>Home</p>
+              </a>
+            </div>
+            <div class="sitemap">
+              <a href="#about">
+                <p>About</p>
+              </a>
+            </div>
+            <div class="sitemap">
+              <a href="#bestseller">
+                <p>Best Seller</p>
+              </a>
+            </div>
+            <div class="sitemap">
+              <a href="#contact">
+                <p>Contact</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom__footer">
+        <p>Copyright &copy; 2020 - Kelompok AO2</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
