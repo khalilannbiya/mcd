@@ -15,9 +15,6 @@ body {
 }
 
 /* ======================= Navbar ======================= */
-main {
-  margin-bottom: 900px;
-}
 
 nav {
   display: flex;
@@ -201,6 +198,34 @@ nav ul li .btn-nav {
   position: absolute;
   left: 10vw;
   bottom: 21vh;
+  animation: show 5s infinite;
+  opacity: 1;
+
+}
+
+@keyframes show {
+  0% {
+    background-color: #da291c;
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    background-color: #ffcc00;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: #da291c;
+  }
 }
 
 #hero .circle-yellow1 {
@@ -212,6 +237,33 @@ nav ul li .btn-nav {
   position: absolute;
   left: 16vw;
   top: 24vh;
+  animation: yellow 5s infinite;
+  opacity: 1;
+}
+
+@keyframes yellow {
+  0% {
+    opacity: 1;
+    background-color: #ffcc00;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    background-color: #da291c;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: #ffcc00;
+  }
 }
 
 #hero .circle-red2 {
@@ -223,6 +275,8 @@ nav ul li .btn-nav {
   position: absolute;
   right: 18vw;
   top: 24vh;
+  animation: show 5s infinite;
+  opacity: 1;
 }
 
 #hero .circle-yellow2 {
@@ -234,6 +288,50 @@ nav ul li .btn-nav {
   position: absolute;
   right: 16vw;
   bottom: 25vh;
+  animation: yellow 5s infinite;
+  opacity: 1;
+}
+
+
+
+/* ========= Section About ========= */
+#about {
+  padding: 5vw 10vw 0 10vw;
+}
+
+.heading-section {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.heading-section::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFCC00;
+  position: absolute;
+}
+
+.flex-about {
+  margin-top: 10rem;
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 11rem;
+}
+
+.flex-about img {
+  width: 35%;
+}
+
+.flex-about p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #0D0E25;
 }
 
 /* Ukuran Tablet */
@@ -354,6 +452,29 @@ nav ul li .btn-nav {
     right: 16vw;
     bottom: 25vh;
   }
+
+  /* ========= Section About ========= */
+  .heading-section {
+    font-size: 2.5rem;
+  }
+
+  .heading-section::after {
+    width: 15px;
+    height: 15px;
+  }
+
+  .flex-about {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .flex-about img {
+    width: 70%;
+  }
+
+  .flex-about p {
+    font-size: 1.3rem;
+  }
 }
 
 
@@ -429,5 +550,24 @@ nav ul li .btn-nav {
     filter: blur(3vw);
     right: 16vw;
     bottom: 15vh;
+  }
+
+  /* ========= Section About ========= */
+  .heading-section {
+    font-size: 6.5vw;
+  }
+
+  .heading-section::after {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .flex-about {
+    margin-top: 15vw;
+    gap: 18vw;
+  }
+
+  .flex-about p {
+    font-size: 4vw;
   }
 }
