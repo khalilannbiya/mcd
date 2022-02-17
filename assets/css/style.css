@@ -109,8 +109,8 @@ nav ul li .btn-nav {
 
 .menu-toggle input {
   position: absolute;
-  width: 40px;
-  height: 28px;
+  width: 55px;
+  height: 30px;
   left: -6px;
   top: -3px;
   opacity: 0;
@@ -148,7 +148,7 @@ nav ul li .btn-nav {
 }
 
 .menu-toggle input:checked~span:nth-child(4) {
-  transform: rotate(-45deg) translate(2px, -2px);
+  transform: rotate(-45deg) translate(0px, 0px);
 }
 
 /* ======== Section Hero ========= */
@@ -200,7 +200,7 @@ nav ul li .btn-nav {
   filter: blur(8px);
   position: absolute;
   left: 10vw;
-  bottom: 18vh;
+  bottom: 21vh;
 }
 
 #hero .circle-yellow1 {
@@ -211,7 +211,7 @@ nav ul li .btn-nav {
   filter: blur(8px);
   position: absolute;
   left: 16vw;
-  top: 17vh;
+  top: 24vh;
 }
 
 #hero .circle-red2 {
@@ -222,15 +222,15 @@ nav ul li .btn-nav {
   filter: blur(20px);
   position: absolute;
   right: 18vw;
-  top: 13vh;
+  top: 24vh;
 }
 
 #hero .circle-yellow2 {
-  width: 2vw;
-  height: 2vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 50%;
   background-color: #ffcc00;
-  filter: blur(8px);
+  filter: blur(22px);
   position: absolute;
   right: 16vw;
   bottom: 25vh;
@@ -322,6 +322,38 @@ nav ul li .btn-nav {
     padding: 2vw 4vw;
     border-radius: 5vw;
   }
+
+  #hero .circle-yellow1 {
+    width: 4vw;
+    height: 4vw;
+    filter: blur(10px);
+    left: 16vw;
+    top: 25vh;
+  }
+
+  #hero .circle-red2 {
+    width: 6vw;
+    height: 6vw;
+    filter: blur(15px);
+    right: 18vw;
+    top: 24vh;
+  }
+
+  #hero .circle-red1 {
+    width: 6vw;
+    height: 6vw;
+    filter: blur(15px);
+    left: 11vw;
+    bottom: 21vh;
+  }
+
+  #hero .circle-yellow2 {
+    width: 7vw;
+    height: 7vw;
+    filter: blur(18px);
+    right: 16vw;
+    bottom: 25vh;
+  }
 }
 
 
@@ -346,11 +378,6 @@ nav ul li .btn-nav {
     top: -1vw;
   }
 
-  .menu-toggle span {
-    width: 6vw;
-    height: .8vw;
-  }
-
   nav ul li a {
     font-size: 4vw;
   }
@@ -358,5 +385,49 @@ nav ul li .btn-nav {
   nav ul {
     width: 80%;
     gap: 8vw;
+  }
+
+  /* ========= Section Hero =========  */
+  .typography__hero h1 {
+    font-size: 5.5vw;
+    line-height: 1.5;
+  }
+
+  .typography__hero .btn-hero {
+    font-size: 4vw;
+    padding: 2vw 6vw;
+    margin-top: 8vw;
+  }
+
+  #hero .circle-yellow1 {
+    width: 10vw;
+    height: 10vw;
+    filter: blur(3vw);
+    left: 16vw;
+    top: 27vh;
+  }
+
+  #hero .circle-red2 {
+    width: 10vw;
+    height: 10vw;
+    filter: blur(3vw);
+    right: 18vw;
+    top: 22vh;
+  }
+
+  #hero .circle-red1 {
+    width: 12vw;
+    height: 12vw;
+    filter: blur(3vw);
+    left: 13vw;
+    bottom: 25vh;
+  }
+
+  #hero .circle-yellow2 {
+    width: 13vw;
+    height: 13vw;
+    filter: blur(3vw);
+    right: 16vw;
+    bottom: 15vh;
   }
 }
